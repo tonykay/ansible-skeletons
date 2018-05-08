@@ -1,0 +1,17 @@
+== README
+
+Basic skeletons for use with ansible-galaxy init command
+
+Whilst normally used for roles structure this can be used to create basic
+scaffolding for playbooks etc.
+
+=== Example usage:
+
+[source,bash]
+----
+ansible-galaxy init --role-skeleton=ansible-skeletons/typical-playbook foo
+cd foo
+git init .
+git add --all
+----
+
