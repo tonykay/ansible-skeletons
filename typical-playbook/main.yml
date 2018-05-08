@@ -1,0 +1,7 @@
+---
+- name: my playbook
+  hosts: all
+  gather_facts: false
+  become: false
+
+  tasks:
