@@ -15,3 +15,41 @@ git init .
 git add --all
 ----
 
+Note: You can pull a sub-directory structure directly from github with `svn`
+But you need to hange the path swapping `/tree/master` for `trunk` e.g.:
+
+[source,bash]
+----
+svn export https://github.com/tonykay/ansible-skeletons/trunk/typical-playbook foo`
+----
+
+=== Examples
+
+* basic-playbook
+[source,bash]
+----
+basic-playbook
+├── README.adoc
+├── ansible.cfg
+├── hosts
+├── main.yml
+└── ssh.cfg
+----
+
+* typical-playbook
+[source,bash]
+----
+typical-playbook
+├── README.adoc
+├── ansible.cfg
+├── group_vars
+│   └── all
+├── inventory
+│   ├── hosts
+│   ├── jumpbox
+│   └── local
+├── main.yml
+├── ssh
+│   └── ssh.cfg
+└── tasks
+----
